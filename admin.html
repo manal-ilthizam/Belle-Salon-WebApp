@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard - Belle Salon</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+<!-- Header -->
+<header>
+  <div class="container header-container">
+      <h1 class="logo">Belle</h1>
+      <nav>
+          <a href="admin.html">Dashboard</a>
+          <a href="services.html">Services</a>
+          <a href="contact.html">Contact</a>
+          <a href="login.html">Logout</a>
+      </nav>
+  </div>
+</header>
+
+<!-- Admin Dashboard -->
+<section class="dashboard">
+  <div class="dashboard-container">
+
+    <!-- Welcome -->
+    <div class="dashboard-welcome">
+      <h2>Welcome, <span id="adminName">Admin</span>!</h2>
+      <p>Manage your salon operations efficiently from here.</p>
+    </div>
+
+    <!-- Quick Actions -->
+    <div class="quick-actions">
+      <a href="#manageCustomers" class="btn"><i class="fas fa-users"></i> Customers</a>
+      <a href="#manageEmployees" class="btn"><i class="fas fa-user-tie"></i> Employees</a>
+      <a href="#appointmentsSection" class="btn"><i class="fas fa-calendar-alt"></i> Appointments</a>
+      <a href="#reportsSection" class="btn"><i class="fas fa-chart-line"></i> Reports</a>
+    </div>
+
+    <!-- Manage Customers -->
+    <div class="dashboard-section" id="manageCustomers">
+      <h3>Customers</h3>
+      <table class="appointments-table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Registered On</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Jane Doe</td>
+            <td>jane@example.com</td>
+            <td>+1234567890</td>
+            <td>01 Nov 2025</td>
+            <td><button class="btn small-btn">Edit</button> <button class="btn small-btn">Delete</button></td>
+          </tr>
+          <tr>
+            <td>Michael Lee</td>
+            <td>michael@example.com</td>
+            <td>+0987654321</td>
+            <td>03 Nov 2025</td>
+            <td><button class="btn small-btn">Edit</button> <button class="btn small-btn">Delete</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Manage Employees -->
+    <div class="dashboard-section" id="manageEmployees">
+      <h3>Employees</h3>
+      <table class="appointments-table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Role</th>
+            <th>Phone</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Alex Smith</td>
+            <td>alex@example.com</td>
+            <td>Stylist</td>
+            <td>+1122334455</td>
+            <td><button class="btn small-btn">Edit</button> <button class="btn small-btn">Delete</button></td>
+          </tr>
+          <tr>
+            <td>Mary Johnson</td>
+            <td>mary@example.com</td>
+            <td>Therapist</td>
+            <td>+2233445566</td>
+            <td><button class="btn small-btn">Edit</button> <button class="btn small-btn">Delete</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Appointments -->
+    <div class="dashboard-section" id="appointmentsSection">
+      <h3>Appointments</h3>
+      <table class="appointments-table">
+        <thead>
+          <tr>
+            <th>Customer</th>
+            <th>Employee</th>
+            <th>Service</th>
+            <th>Date</th>
+            <th>Time</th>
+            <th>Status</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Jane Doe</td>
+            <td>Alex Smith</td>
+            <td>Haircut</td>
+            <td>12 Nov 2025</td>
+            <td>2:00 PM</td>
+            <td>Pending</td>
+            <td><button class="btn small-btn">Confirm</button> <button class="btn small-btn">Cancel</button></td>
+          </tr>
+          <tr>
+            <td>Michael Lee</td>
+            <td>Mary Johnson</td>
+            <td>Facial</td>
+            <td>15 Nov 2025</td>
+            <td>11:00 AM</td>
+            <td>Confirmed</td>
+            <td><button class="btn small-btn">Reschedule</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Reports / Analytics -->
+    <div class="dashboard-section" id="reportsSection">
+      <h3>Reports & Analytics</h3>
+      <div class="services-cards">
+        <div class="service-card">
+          <i class="fas fa-chart-line fa-2x"></i>
+          <h4>Daily Revenue</h4>
+          <p>Track daily income and sales trends.</p>
+        </div>
+        <div class="service-card">
+          <i class="fas fa-chart-pie fa-2x"></i>
+          <h4>Appointment Stats</h4>
+          <p>Analyze booked vs pending appointments.</p>
+        </div>
+        <div class="service-card">
+          <i class="fas fa-user-check fa-2x"></i>
+          <h4>Active Customers</h4>
+          <p>Monitor customer engagement and new signups.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <p>&copy; 2025 Belle Salon. All Rights Reserved.</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
