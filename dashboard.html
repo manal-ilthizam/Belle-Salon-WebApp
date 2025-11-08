@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Customer Dashboard - Belle Salon</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+<!-- Header -->
+<header>
+  <div class="container header-container">
+      <h1 class="logo">Belle</h1>
+      <nav>
+          <a href="dashboard.html">Dashboard</a>
+          <a href="services.html">Services</a>
+          <a href="contact.html">Contact</a>
+          <a href="login.html">Logout</a>
+      </nav>
+  </div>
+</header>
+
+<!-- Dashboard Main -->
+<section class="dashboard">
+  <div class="dashboard-container">
+
+    <!-- Welcome Section -->
+    <div class="dashboard-welcome">
+      <h2>Welcome, <span id="customerName">Jane Doe</span>!</h2>
+      <p>Here is your account overview and upcoming appointments.</p>
+    </div>
+
+    <!-- Quick Actions -->
+    <div class="quick-actions">
+      <a href="services.html" class="btn"><i class="fas fa-calendar-plus"></i> Book Appointment</a>
+      <a href="profile.html" class="btn"><i class="fas fa-user-edit"></i> Update Profile</a>
+    </div>
+
+    <!-- Upcoming Appointments -->
+    <div class="dashboard-section">
+      <h3>Upcoming Appointments</h3>
+      <table class="appointments-table">
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Time</th>
+            <th>Service</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>12 Nov 2025</td>
+            <td>2:00 PM</td>
+            <td>Haircut & Styling</td>
+            <td>Confirmed</td>
+          </tr>
+          <tr>
+            <td>15 Nov 2025</td>
+            <td>11:00 AM</td>
+            <td>Facial Treatment</td>
+            <td>Pending</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Services Section -->
+    <div class="dashboard-section">
+      <h3>Available Services</h3>
+      <div class="services-cards">
+        <div class="service-card">
+          <i class="fas fa-cut fa-2x"></i>
+          <h4>Haircut</h4>
+          <p>Professional haircuts and styling.</p>
+        </div>
+        <div class="service-card">
+          <i class="fas fa-spa fa-2x"></i>
+          <h4>Facial</h4>
+          <p>Relaxing facial treatments and skincare.</p>
+        </div>
+        <div class="service-card">
+          <i class="fas fa-hand-sparkles fa-2x"></i>
+          <h4>Manicure & Pedicure</h4>
+          <p>Luxury nail care services.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <p>&copy; 2025 Belle Salon. All Rights Reserved.</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
