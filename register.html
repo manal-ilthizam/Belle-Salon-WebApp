@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register - Belle Salon</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- Header -->
+<header>
+  <div class="container header-container">
+      <h1 class="logo">Belle</h1>
+      <nav>
+          <a href="index.html">Home</a>
+          <a href="services.html">Services</a>
+          <a href="contact.html">Contact</a>
+          <a href="login.html">Login</a>
+      </nav>
+  </div>
+</header>
+
+<!-- Registration Form Section -->
+<section class="form-section">
+  <div class="form-container">
+    <h2>Create Account</h2>
+    <form id="registerForm">
+
+      <label for="fullname">Full Name</label>
+      <input type="text" id="fullname" placeholder="Enter your full name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="Enter your email" required>
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" placeholder="Enter your phone number" required>
+
+      <label for="password">Password</label>
+      <input type="password" id="password" placeholder="Enter a strong password" required>
+
+      <label for="confirmPassword">Confirm Password</label>
+      <input type="password" id="confirmPassword" placeholder="Re-enter your password" required>
+
+      <input type="hidden" id="role" value="customer"> <!-- fixed role -->
+
+      <button type="submit" class="btn">Register</button>
+      <p>Already have an account? <a href="login.html">Login here</a></p>
+    </form>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <p>&copy; 2025 Belle Salon. All Rights Reserved.</p>
+</footer>
+
+<script src="js/script.js"></script>
+<script>
+  // Simple client-side validation
+  const registerForm = document.getElementById('registerForm');
+  registerForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const password = document.getElementById('password').value;
+      const confirmPassword = document.getElementById('confirmPassword').value;
+
+      if(password !== confirmPassword) {
+          alert('Passwords do not match!');
+          return;
+      }
+
+      // Here you can handle sending data to backend/SQL
+      alert('Registration successful!');
+      registerForm.reset();
+  });
+</script>
+
+</body>
+</html>
