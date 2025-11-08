@@ -15,7 +15,7 @@
   <div class="container header-container">
       <h1 class="logo">Belle</h1>
       <nav>
-          <a href="dashboard.html">Dashboard</a>
+          <a href="index.html">Home</a>
           <a href="services.html">Services</a>
           <a href="contact.html">Contact</a>
           <a href="login.html">Logout</a>
@@ -23,77 +23,111 @@
   </div>
 </header>
 
-<!-- Dashboard Main -->
+<!-- Dashboard Section -->
 <section class="dashboard">
   <div class="dashboard-container">
 
-    <!-- Welcome Section -->
+    <!-- Welcome -->
     <div class="dashboard-welcome">
-      <h2>Welcome, <span id="customerName">Jane Doe</span>!</h2>
-      <p>Here is your account overview and upcoming appointments.</p>
+      <h2>Welcome, <span id="customerName">Customer</span>!</h2>
+      <p>Manage your appointments and profile easily.</p>
     </div>
 
     <!-- Quick Actions -->
     <div class="quick-actions">
-      <a href="services.html" class="btn"><i class="fas fa-calendar-plus"></i> Book Appointment</a>
-      <a href="profile.html" class="btn"><i class="fas fa-user-edit"></i> Update Profile</a>
+      <a href="#bookAppointmentSection" class="btn"><i class="fas fa-calendar-plus"></i> Book Appointment</a>
+      <a href="#myAppointmentsSection" class="btn"><i class="fas fa-calendar-check"></i> My Appointments</a>
+      <a href="#profileSection" class="btn"><i class="fas fa-user"></i> Profile</a>
     </div>
 
-    <!-- Upcoming Appointments -->
-    <div class="dashboard-section">
-      <h3>Upcoming Appointments</h3>
+    <!-- Book Appointment -->
+    <div class="dashboard-section" id="bookAppointmentSection">
+      <h3>Book Appointment</h3>
+      <form class="appointment-form">
+        <label for="service">Select Service</label>
+        <select id="service" required>
+          <option value="">-- Select Service --</option>
+          <option value="Haircut">Haircut</option>
+          <option value="Facial">Facial</option>
+          <option value="Manicure">Manicure</option>
+          <option value="Pedicure">Pedicure</option>
+        </select>
+
+        <label for="employee">Select Employee</label>
+        <select id="employee" required>
+          <option value="">-- Select Staff --</option>
+          <option value="Alex Smith">Alex Smith</option>
+          <option value="Mary Johnson">Mary Johnson</option>
+        </select>
+
+        <label for="date">Date</label>
+        <input type="date" id="date" required>
+
+        <label for="time">Time</label>
+        <input type="time" id="time" required>
+
+        <button type="submit" class="btn">Book Now</button>
+      </form>
+    </div>
+
+    <!-- My Appointments -->
+    <div class="dashboard-section" id="myAppointmentsSection">
+      <h3>My Appointments</h3>
       <table class="appointments-table">
         <thead>
           <tr>
+            <th>Service</th>
+            <th>Employee</th>
             <th>Date</th>
             <th>Time</th>
-            <th>Service</th>
             <th>Status</th>
+            <th>Action</th>
           </tr>
         </thead>
         <tbody>
           <tr>
+            <td>Haircut</td>
+            <td>Alex Smith</td>
             <td>12 Nov 2025</td>
             <td>2:00 PM</td>
-            <td>Haircut & Styling</td>
-            <td>Confirmed</td>
+            <td>Pending</td>
+            <td><button class="btn small-btn">Cancel</button></td>
           </tr>
           <tr>
+            <td>Facial</td>
+            <td>Mary Johnson</td>
             <td>15 Nov 2025</td>
             <td>11:00 AM</td>
-            <td>Facial Treatment</td>
-            <td>Pending</td>
+            <td>Confirmed</td>
+            <td><button class="btn small-btn">Cancel</button></td>
           </tr>
         </tbody>
       </table>
     </div>
 
-    <!-- Services Section -->
-    <div class="dashboard-section">
-      <h3>Available Services</h3>
-      <div class="services-cards">
-        <div class="service-card">
-          <i class="fas fa-cut fa-2x"></i>
-          <h4>Haircut</h4>
-          <p>Professional haircuts and styling.</p>
-        </div>
-        <div class="service-card">
-          <i class="fas fa-spa fa-2x"></i>
-          <h4>Facial</h4>
-          <p>Relaxing facial treatments and skincare.</p>
-        </div>
-        <div class="service-card">
-          <i class="fas fa-hand-sparkles fa-2x"></i>
-          <h4>Manicure & Pedicure</h4>
-          <p>Luxury nail care services.</p>
-        </div>
-      </div>
+    <!-- Profile -->
+    <div class="dashboard-section" id="profileSection">
+      <h3>My Profile</h3>
+      <form class="profile-form">
+        <label for="profileName">Name</label>
+        <input type="text" id="profileName" value="Customer Name">
+
+        <label for="profileEmail">Email</label>
+        <input type="email" id="profileEmail" value="customer@example.com">
+
+        <label for="profilePhone">Phone</label>
+        <input type="text" id="profilePhone" value="+1234567890">
+
+        <label for="profileAddress">Address</label>
+        <input type="text" id="profileAddress" value="123 Belle Street, City">
+
+        <button type="submit" class="btn">Update Profile</button>
+      </form>
     </div>
 
   </div>
 </section>
 
-<!-- Footer -->
 <footer>
   <p>&copy; 2025 Belle Salon. All Rights Reserved.</p>
 </footer>
