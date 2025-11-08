@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Employee Dashboard - Belle Salon</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+<!-- Header -->
+<header>
+  <div class="container header-container">
+      <h1 class="logo">Belle</h1>
+      <nav>
+          <a href="employee.html">Dashboard</a>
+          <a href="services.html">Services</a>
+          <a href="contact.html">Contact</a>
+          <a href="login.html">Logout</a>
+      </nav>
+  </div>
+</header>
+
+<!-- Dashboard Main -->
+<section class="dashboard">
+  <div class="dashboard-container">
+
+    <!-- Welcome Section -->
+    <div class="dashboard-welcome">
+      <h2>Welcome, <span id="employeeName">Alex Smith</span>!</h2>
+      <p>Here is your schedule and tasks for today.</p>
+    </div>
+
+    <!-- Quick Actions -->
+    <div class="quick-actions">
+      <a href="services.html" class="btn"><i class="fas fa-check-circle"></i> Update Status</a>
+      <a href="profile.html" class="btn"><i class="fas fa-user-edit"></i> Update Profile</a>
+    </div>
+
+    <!-- Today's Appointments -->
+    <div class="dashboard-section">
+      <h3>Today's Appointments</h3>
+      <table class="appointments-table">
+        <thead>
+          <tr>
+            <th>Time</th>
+            <th>Customer</th>
+            <th>Service</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>10:00 AM</td>
+            <td>Jane Doe</td>
+            <td>Haircut</td>
+            <td>Pending</td>
+          </tr>
+          <tr>
+            <td>11:30 AM</td>
+            <td>Michael Lee</td>
+            <td>Facial</td>
+            <td>Confirmed</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Manage Services / Customers -->
+    <div class="dashboard-section">
+      <h3>Manage Customers & Services</h3>
+      <div class="services-cards">
+        <div class="service-card">
+          <i class="fas fa-user fa-2x"></i>
+          <h4>Customer List</h4>
+          <p>View and manage customer details.</p>
+        </div>
+        <div class="service-card">
+          <i class="fas fa-cut fa-2x"></i>
+          <h4>Services</h4>
+          <p>Update service availability and pricing.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <p>&copy; 2025 Belle Salon. All Rights Reserved.</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
