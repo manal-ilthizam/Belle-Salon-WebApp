@@ -32,19 +32,19 @@ header .header-container {
 header nav a {
     margin-left: 20px;
     text-decoration: none;
-    color: #ffb6c1; /* light pink */
+    color: #f5e8c7; /* cream */
     font-weight: 600;
     transition: color 0.3s;
 }
 
 header nav a:hover {
-    color: #ff69b4; /* bright pink on hover */
+    color: #e6d8b0; /* darker cream on hover */
 }
 
 .logo {
     font-family: 'Dancing Script', cursive; /* Curvy elegant font */
     font-size: 36px;
-    color: #ff69b4;
+    color: #f5e8c7; /* cream */
     font-weight: 700;
 }
 
@@ -70,18 +70,13 @@ header nav a:hover {
 
 .hero-content {
     position: relative;
-    color: #ffb6c1; /* light pink text */
+    color: #f5e8c7; /* cream text */
     max-width: 700px;
     padding: 20px;
 }
+
 .hero-content h2 {
     font-family: 'Dancing Script', cursive;
-    font-size: 48px;
-    margin-bottom: 20px;
-    font-weight: 700;
-}
-
-.hero h2 {
     font-size: 48px;
     margin-bottom: 20px;
     font-weight: 700;
@@ -90,12 +85,12 @@ header nav a:hover {
 .hero p {
     font-size: 20px;
     margin-bottom: 30px;
-    color: #ffd6e8; /* softer light pink */
+    color: #fff7e6; /* softer cream */
 }
 
 .btn {
-    background-color: #ff69b4;
-    color: #fff;
+    background-color: #f5e8c7; /* cream button */
+    color: #111; /* dark text on cream */
     padding: 15px 30px;
     border-radius: 50px;
     text-decoration: none;
@@ -104,7 +99,7 @@ header nav a:hover {
 }
 
 .btn:hover {
-    background-color: #ff85c1;
+    background-color: #e6d8b0; /* darker cream on hover */
 }
 
 /* About */
@@ -117,7 +112,7 @@ header nav a:hover {
 .about h2 {
     font-size: 36px;
     margin-bottom: 50px;
-    color: #ff69b4;
+    color: #f5e8c7; /* cream */
 }
 
 .about-container {
@@ -137,11 +132,11 @@ header nav a:hover {
 
 .about-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 10px 20px rgba(255,182,193,0.4); /* light pink shadow */
+    box-shadow: 0 10px 20px rgba(245,232,199,0.4); /* cream shadow */
 }
 
 .about-card i {
-    color: #ff69b4;
+    color: #f5e8c7; /* cream icons */
     margin-bottom: 20px;
 }
 
@@ -154,6 +149,84 @@ footer {
     background-color: #111;
     padding: 20px 0;
     text-align: center;
-    color: #ffb6c1;
+    color: #f5e8c7; /* cream */
     border-top: 1px solid #222;
+}
+
+/* Form Section LOGIN */
+.form-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 20px;
+    background-color: #111;
+}
+
+.form-container {
+    background-color: #1c1c1c;
+    padding: 40px;
+    border-radius: 15px;
+    width: 350px;
+    box-shadow: 0 10px 20px rgba(245, 232, 199, 0.3); /* cream shadow */
+    text-align: center;
+}
+
+.form-container h2 {
+    color: #f5e8c7; /* cream color */
+    font-family: 'Dancing Script', cursive;
+    margin-bottom: 30px;
+    font-size: 36px;
+}
+
+.form-container label {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+    color: #fff7e6; /* soft cream for labels */
+    font-weight: 600;
+}
+
+.form-container input,
+.form-container select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #222;
+    color: #fff;
+}
+
+.form-container input::placeholder {
+    color: #aaa;
+}
+
+.form-container .btn {
+    width: 100%;
+    padding: 15px;
+    border-radius: 50px;
+    font-weight: 600;
+    margin-top: 10px;
+    background-color: #f5e8c7; /* cream button */
+    color: #111; /* dark text on cream */
+}
+
+.form-container .btn:hover {
+    background-color: #e6d8b0; /* darker cream on hover */
+}
+
+.form-container p {
+    color: #fff7e6; /* soft cream */
+    margin-top: 15px;
+}
+
+.form-container a {
+    color: #f5e8c7; /* cream links */
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.form-container a:hover {
+    color: #e6d8b0; /* darker cream on hover */
+    text-decoration: underline;
 }
